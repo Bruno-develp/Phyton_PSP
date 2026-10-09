@@ -1,0 +1,6 @@
+numeros = [1, 5, 3, 4, 2]
+
+numeros.sort()
+
+print(numeros)
+
