@@ -7,4 +7,3 @@ url = f"https://www.google.com/search?q={termino}"
 subprocess.run(f"START {url}", shell=True)
 
 
-
