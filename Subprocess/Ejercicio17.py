@@ -1,7 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 23 17:15:15 2026
+import subprocess
 
-@author: DAMDU204
-"""
+busqueda = input("Introduce un termido de busqueda: ")
+url = "https://www.google.com/search?q=" + busqueda
 
+resultado = subprocess.run(["cmd", "/c", "start", "", url])
+
+print("Proceso padre terminado")

@@ -1,7 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 23 17:15:15 2026
+import subprocess
 
-@author: DAMDU204
-"""
+resultado = subprocess.run(["ipconfig"], capture_output = True, encoding = "cp1252", shell = True)
+print("--------- CON TEXT ------------")
+print(resultado.stdout)
 
+resultado = subprocess.run(["ipconfig"], capture_output = True)
+print("--------- SIN TEXT ------------")
+print(resultado.stdout)

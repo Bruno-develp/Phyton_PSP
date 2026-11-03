@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 23 17:15:15 2026
+import subprocess
 
-@author: DAMDU204
-"""
-
+resultado = subprocess.run(["type", "archiuvo.txt"], capture_output = True, encoding = "cp1252", shell = True)
+print("Salida estandar: ")
+print(resultado.stdout)
+print(resultado.stderr)

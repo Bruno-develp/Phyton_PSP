@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 23 17:15:15 2026
+import subprocess
 
-@author: DAMDU204
-"""
+resultado = subprocess.run("echo Hola && dir", shell = True, capture_output = True, text = True, encoding = "cp1252")
 
+print(resultado.stdout)

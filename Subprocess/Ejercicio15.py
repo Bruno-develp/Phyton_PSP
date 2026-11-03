@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 23 17:15:15 2026
+import subprocess
 
-@author: DAMDU204
-"""
-
+res = subprocess.run(["ipconfig", ">", "configuracion.txt"],  shell = True)
+    
